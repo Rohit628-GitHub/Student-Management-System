@@ -1,0 +1,75 @@
+
+
+
+
+
+/* Reset basic defaults within the navigation */
+nav {
+  background-color: #2c3e50; /* Modern Slate Blue */
+  padding: 0 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Flexbox Container for the layout list */
+.container {
+  display: flex;
+  justify-content: center; /* Centers the menu links */
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  height: 60px; /* Standard navbar height */
+  gap: 15px; /* Spacing between navigation items */
+}
+
+/* Individual list item layout styling */
+.container li {
+  display: inline-block;
+}
+
+/* Target the React Router Link elements (which render as standard 'a' tags) */
+.container li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Smooth hover and interaction effects */
+.container li a:hover {
+  background-color: #3498db; /* Energetic Soft Blue */
+  color: #ffffff;
+}
+
+/* Active micro-interaction click feel */
+.container li a:active {
+  transform: scale(0.95);
+}
+
+/* Responsive adjustment for small screen mobile environments */
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+    gap: 5px;
+  }
+  
+  .container li a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}
+
+
+
+
+

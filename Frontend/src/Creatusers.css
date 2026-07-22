@@ -1,0 +1,104 @@
+/* Container Card Rules */
+.create-user-container {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 550px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-user-container h2 {
+  color: #2c3e50;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.create-user-container .subtitle {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Form Layout Structures */
+.create-user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #34495e;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+/* Inputs & Dropdown UI Controls Rules */
+.create-user-form input,
+.create-user-form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #2d3748;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.create-user-form input:focus,
+.create-user-form select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.25);
+}
+
+/* Two-column layout helper rules */
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.half-width {
+  flex: 1;
+}
+
+/* Submission Elements */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Inline Dynamic Toast Alert Messages */
+.form-message.success {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #2ecc71;
+  background-color: #ebfaf0;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}

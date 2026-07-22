@@ -1,0 +1,62 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.navbar ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  padding: 6px 0;
+}
+
+.navbar ul li:hover {
+  color: #3498db;
+}
+
+/* Global Content Wrapper */
+.main-content {
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Common Global Utilities */
+.form-message {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 0.9rem;
+}
