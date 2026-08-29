@@ -1,0 +1,106 @@
+/* Base Container Utilities */
+.users-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header Adjustments for Responsive Flow */
+.users-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Wraps items cleanly on small mobile phones */
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Fluid Search Input Box */
+.search-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* CRITICAL STEP: Makes the Table Component Responsive */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto; /* Adds a horizontal scrollbar ONLY when screen is narrow */
+  -webkit-overflow-scrolling: touch; /* Smooth inertia scrolling behavior on iOS devices */
+  margin-top: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+/* Table Presentation Basics */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+  min-width: 750px; /* Forces minimum width so the columns don't crunch together text illegibly */
+}
+
+.users-table th, 
+.users-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eeeeee;
+  white-space: nowrap; /* Prevents awkward string line breaks for names or emails */
+}
+
+.users-table th {
+  background-color: #f8f9fa;
+  color: #333333;
+  font-weight: 600;
+}
+
+/* Action Utility Button Wrappers */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit, .btn-delete {
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.btn-edit {
+  background-color: #4CAF50;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+  opacity: 0.85;
+}
+
+/* Optional Breakpoint tuning for layout padding */
+@media (max-width: 600px) {
+  .users-container {
+    padding: 10px;
+  }
+  .users-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .search-input {
+    max-width: 100%; /* Spans full width on phone displays */
+  }
+}
