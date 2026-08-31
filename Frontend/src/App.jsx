@@ -17,12 +17,12 @@ function App() {
       <Nav/>
 
       <Routes>
-        {/* Public routes: reachable without being logged in */}
+        
         <Route path="/about" element={<About/>} />
         <Route path="/signup" element={<Singup/>} />
         <Route path="/login" element={<Login/>} />
 
-        {/* Everything below requires login first */}
+       
         <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>} />
         <Route path="/creatuser" element={<ProtectedRoute><CreateUsers/></ProtectedRoute>} />
         <Route path="/allusers" element={<ProtectedRoute><Allusers/></ProtectedRoute>} />

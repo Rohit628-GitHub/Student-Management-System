@@ -18,11 +18,11 @@ const Nav = () => {
     <nav>
       <ul className="container">
         <li><Link to={'/about'}>About </Link> </li>
-        <li><Link to={'/'}>Home </Link> </li>
+       
 
         {isAuthenticated ? (
           <>
-            
+            <li><Link to={'/'}>Home </Link> </li>
             <li><Link to={'/creatuser'}>CreatUser </Link> </li>
             <li><Link to={'/allusers'}>Allusers </Link> </li>
             <li><span style={{ color: '#fff' }}>Hi, {user?.name}</span></li>
